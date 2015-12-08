@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Test Zoomer</title>
+</head>
+<body>
+<div id="testImage" style="width: 800px; height: 600px;"></div>
+<script src="/openseadragon/openseadragon.min.js"></script>
+<script type="text/javascript">
+    var viewer = OpenSeadragon({
+        id: "testImage",
+        prefixUrl: "/openseadragon/images/",
+        tileSources: "/testImage.dzi"
+    });
+</script>
+</body>
+</html>
