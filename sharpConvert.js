@@ -1,7 +1,17 @@
-var sharp = require('sharp');
 
-var prompt = require('prompt');
+//  sharpConvert.js: Convert an image file into Deep Zoom format
+//     Brian Capouch 9 December 2015
+//     This version prompts for names of image file and tiles base
+//     Output: .dzi file and directory of tile images
+//
 
+// To-do: allow command-line input of values
+
+// Set up functionality
+var sharp = require('sharp'),
+  prompt = require('prompt');
+
+// Get ready to talk to the user
 prompt.start();
 
 prompt.get(['filename', 'dziname'], function (err, result) {
@@ -11,8 +21,10 @@ prompt.get(['filename', 'dziname'], function (err, result) {
   console.log('Dziname: ' + result.dziname);
   var infile = result.filename,
     dzibase = result.dziname + '.dzi';
+
+  // Perform conversion
   sharp(infile).tile(256).toFile(dzibase, function(err, info) {
-  });    
+  });
 });
 
 function onErr(err) {
