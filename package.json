@@ -8,6 +8,7 @@
     "morgan": "1.6.x",
     "openseadragon": "2.1.x",
     "sharp": "0.12.x",
-    "prompt": "0.2.x"
+    "prompt": "0.2.x",
+    "optimist": "0.6.x"
   }
 }
