@@ -9,7 +9,11 @@
 
 // Set up functionality
 var sharp = require('sharp'),
-  prompt = require('prompt');
+  prompt = require('prompt'),
+  optimist = require('optimist');
+
+  // Set overrides from command line
+  prompt.override = optimist.argv;
 
 // Get ready to talk to the user
 prompt.start();
