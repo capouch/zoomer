@@ -6,6 +6,7 @@
     "express": "4.10.x",
     "method-override": "2.3.x",
     "morgan": "1.6.x",
-    "openseadragon": "2.1.x"
+    "openseadragon": "2.1.x",
+    "sharp": "0.12.x"
   }
 }
