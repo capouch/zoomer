@@ -3,13 +3,13 @@
 <title>Test Zoomer</title>
 </head>
 <body>
-<div id="testImage" style="width: 800px; height: 600px;"></div>
+<div id="imgBox" style="width: 800px; height: 600px;"></div>
 <script src="/node_modules/openseadragon/build/openseadragon/openseadragon.min.js"></script>
 <script type="text/javascript">
     var viewer = OpenSeadragon({
-        id: "testImage",
+        id: "imgBox",
         prefixUrl: "/node_modules/openseadragon/build/openseadragon/images/",
-        tileSources: "/pugilists.dzi"
+        tileSources: "/testImage.dzi"
     });
 </script>
 </body>
