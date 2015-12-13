@@ -3,14 +3,28 @@
 <title>Test Zoomer</title>
 </head>
 <body>
+<a href="#" onclick="renderImage('mainEast');return false;">Main Street East -</a>
+<a href="#" onclick="renderImage('mainWest');return false;">Main Street West -</a>
+<a href="#" onclick="renderImage('medMain');return false;">Main Street Autos -</a>
+<a href="#" onclick="renderImage('horse1');return false;">Williams Horse -</a>
+<a href="#" onclick="renderImage('hotel');return false;">Evert House Hotel -</a>
+<a href="#" onclick="renderImage('brush');return false;">Medaryville Garage -</a>
+<a href="#" onclick="renderImage('lutheran');return false;">St. Mark's -</a>
+<br><a href="#" onclick="renderImage('baughmanAuto');return false;">Baughman Auto -</a>
+<a href="#" onclick="renderImage('baughmanSleigh');return false;">Baughman Sleigh -</a>
 <div id="imgBox" style="width: 800px; height: 600px;"></div>
 <script src="/node_modules/openseadragon/build/openseadragon/openseadragon.min.js"></script>
 <script type="text/javascript">
+console.log('In render again!!');
+  function renderImage(selection) {
+    document.getElementById("imgBox").innerHTML = "";
+    var baseName = selection + '.dzi';
     var viewer = OpenSeadragon({
         id: "imgBox",
         prefixUrl: "/node_modules/openseadragon/build/openseadragon/images/",
-        tileSources: "/medMain.dzi"
+        tileSources: baseName
     });
+  }
 </script>
 </body>
 </html>
