@@ -4,7 +4,7 @@
 </head>
 
 <body>
-  // For now, render selections in this sloppy manner
+  <!-- For now, render selections in this sloppy manner -->
   <a href="#" onclick="renderImage('mainEast');return false;">Main Street East -</a>
   <a href="#" onclick="renderImage('mainWest');return false;">Main Street West -</a>
   <a href="#" onclick="renderImage('medMain');return false;">Main Street Autos -</a>
@@ -15,13 +15,13 @@
   <br><a href="#" onclick="renderImage('baughmanAuto');return false;">Baughman Auto -</a>
   <a href="#" onclick="renderImage('baughmanSleigh');return false;">Baughman Sleigh -</a>
 
-  // Container for zoomer
+  <!-- Container for zoomer -->
   <div id="imgBox" style="width: 800px; height: 600px;"></div>
 
-  // Get OSD
+  <!-- Get OSD -->
   <script src="/node_modules/openseadragon/build/openseadragon/openseadragon.min.js"></script>
 
-  // Click handler to set up and render zoomer
+  <!-- Click handler to set up and render zoomer -->
   <script type="text/javascript">
     function renderImage(selection) {
       // Clear out any previous contents
