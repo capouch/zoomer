@@ -24,10 +24,13 @@
   <!-- Click handler to set up and render zoomer -->
   <script type="text/javascript">
     function renderImage(selection) {
+      
       // Clear out any previous contents
       document.getElementById("imgBox").innerHTML = "";
+
       // Set filename
       var baseName = selection + '.dzi';
+
       // Render viewer note nasty "node_modules" parameter!
       var viewer = OpenSeadragon({
         id: "imgBox",
